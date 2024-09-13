@@ -1758,6 +1758,13 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	#about .inner {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		text-align: start;
+	}
+
 	header p {
 		color: rgba(255, 255, 255, 0.5);
 		position: relative;
@@ -1775,7 +1782,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 3.5em 0;
+		margin: 0 0 2em 0;
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2555,13 +2562,13 @@ input, select, textarea {
 	}
 
 		.features li {
-			padding: 4em 4em 2em 6em ;
+			padding: 2em 1em;
 			display: block;
 			position: relative;
-			text-align: left;
-			width: 50%;
+			text-align: center;
+			width: 16.5%;
 		}
-
+			/* 
 			.features li:nth-child(1) {
 				background-color: rgba(0, 0, 0, 0.035);
 			}
@@ -2602,13 +2609,31 @@ input, select, textarea {
 				background-color: rgba(0, 0, 0, 0.35);
 			}
 
-			.features li:before {
+			.features li:nth-child(11) {
+				background-color: rgba(0, 0, 0, 0.35);
+			}
+
+			.features li:nth-child(12) {
+				background-color: rgba(0, 0, 0, 0.35);
+			} */
+
+			/* .features li:before {
 				display: block;
 				color: #00ffcc;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
 				font-size: 1.5em;
+			} */
+
+			.icon > img {
+				width: 60%;
+			}
+
+			.icon > h3 {
+				font-size: 1em;
+				text-align: center;
+				font-weight: 600;
 			}
 
 			.features li:nth-child(1) {
@@ -2630,8 +2655,9 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				.features li {
-					padding: 3em 2em 1em 2em ;
 					text-align: center;
+					padding: 2em 1em;
+					width: 20%;
 				}
 
 					.features li:before {
@@ -2641,19 +2667,29 @@ input, select, textarea {
 						top: 0;
 					}
 
+					.icon > h3 {
+						font-size: 0.9em;
+						text-align: center;
+					}
+
 			}
 
 			@media screen and (max-width: 736px) {
 
 				.features li {
-					padding: 3em 0 1em 0 ;
 					background-color: transparent !important;
-					border-top: solid 2px #fff;
-					width: 100%;
+					/* border-top: solid 2px #fff; */
+					padding: 2em 1em;
+					width: 25%;
 				}
 
-					.features li:first-child {
+					/* .features li:first-child {
 						border-top: 0;
+					} */
+
+					.icon > h3 {
+						font-size: 0.8em;
+						text-align: center;
 					}
 
 			}
@@ -2703,15 +2739,20 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			/* background-color: rgb(194, 176, 158); */
+			background-color: rgb(111, 120, 95);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			/* background-color: rgba(194, 176, 158, 0.95); */
+			background-color: rgba(111, 120, 95, 0.95);
+
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			/* background-color: rgba(194, 176, 158, 0.9); */
+			background-color: rgba(111, 120, 95, 0.9);
+
 		}
 
 		.spotlight:nth-child(4) {
@@ -2791,6 +2832,11 @@ input, select, textarea {
 		padding: 6em 0 4em 0 ;
 	}
 
+		#skills.wrapper {
+			padding: 4em 0 2em 0 ;
+
+		}
+
 		.wrapper > .inner {
 			width: 60em;
 			margin: 0 auto;
@@ -2817,8 +2863,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
+			/* background-color: rgb(172, 156, 140); */
+			color: #ffffff;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2842,7 +2888,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
@@ -2850,7 +2896,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 label {
@@ -2980,7 +3026,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			/* background-color: rgb(175, 175, 175); */
+			background-color: rgb(172, 156, 140);
 			color: #d3d4e4;
 		}
 
@@ -3351,7 +3398,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: rgb(172, 156, 140);
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3814,10 +3861,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3885,7 +3932,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding: 3em 0 1.5em 0 ;
 		background-color: #1d242a;
 		text-align: center;
 	}
@@ -3948,7 +3995,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 3em 2em 3em ;
+				padding: 3em 2em 1.5em 2em ;	
 			}
 
 		}
@@ -3964,10 +4011,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3976,7 +4023,7 @@ input, select, textarea {
 	}
 
 	body.landing #footer {
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color: rgb(29, 36, 42);
 	}
 
 	body.is-mobile.landing #page-wrapper {
@@ -3985,10 +4032,10 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/reversed.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
